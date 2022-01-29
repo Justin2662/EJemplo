@@ -15,6 +15,7 @@ class CreateReservesTable extends Migration
     {
         Schema::create('reserves', function (Blueprint $table) {
             $table->id();
+            $table->string("vuelos");
             $table->timestamps();
         });
     }
